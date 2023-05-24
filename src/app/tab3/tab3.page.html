@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="titulo">
+      Perfil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="perfil">
+
+  <ion-segment value="meuperfil">
+    <ion-segment-button value="meuperfil">
+      <ion-label>Meu Perfil</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="cadastro">
+      <ion-label>Cadastre-se</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  
+  <div>
+    <h5>Crie um perfil:</h5>
+      <ion-list>
+        <ion-input label="Nome Completo" label-placement="floating" fill="outline" placeholder="Nome Completo"></ion-input>
+        <ion-input label="Gênero" label-placement="floating" fill="outline" placeholder="Gênero"></ion-input>
+        <ion-input label="Idade" type="int" maxlength="2" label-placement="floating" fill="outline" placeholder="Idade"></ion-input>
+        <ion-input label="Email" label-placement="floating" fill="outline" placeholder="Email"></ion-input>
+        <ion-input label="Senha" label-placement="floating" fill="outline" placeholder="Senha"></ion-input>
+      </ion-list>
+  </div>
+
+  <div></div>
+</ion-content>
