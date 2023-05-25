@@ -5,26 +5,3 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-item lines="none">
-  <ion-label style="font-weight: 200;font-size: 2em;">
-    Hoje
-    <p style="font-weight: 400; color: #433465">{{today | date:'fullDate'}}</p>
-  </ion-label>
-</ion-item>
-
-<ion-content [fullscreen]="true">
-
-  <ion-card *ngFor="let item of todoList">
-    <ion-card-header>
-      <ion-card-subtitle>
-        trabalho
-        {{item.itemCategory}}
-      </ion-card-subtitle>
-    </ion-card-header>
-      <ion-item>
-        <ion-icon name="ellipse"></ion-icon>
-        <ion-label>{{item.itemName}}</ion-label>
-      </ion-item>
-  </ion-card>
-</ion-content>
