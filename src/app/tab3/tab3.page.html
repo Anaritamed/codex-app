@@ -6,27 +6,41 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="perfil">
-
-  <ion-segment value="meuperfil">
-    <ion-segment-button value="meuperfil">
-      <ion-label>Meu Perfil</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="cadastro">
-      <ion-label>Cadastre-se</ion-label>
-    </ion-segment-button>
-  </ion-segment>
-  
+<ion-content class="perfil">  
   <div>
     <h5>Crie um perfil:</h5>
       <ion-list>
-        <ion-input label="Nome Completo" label-placement="floating" fill="outline" placeholder="Nome Completo"></ion-input>
-        <ion-input label="Gênero" label-placement="floating" fill="outline" placeholder="Gênero"></ion-input>
-        <ion-input label="Idade" type="int" maxlength="2" label-placement="floating" fill="outline" placeholder="Idade"></ion-input>
-        <ion-input label="Email" label-placement="floating" fill="outline" placeholder="Email"></ion-input>
-        <ion-input label="Senha" label-placement="floating" fill="outline" placeholder="Senha"></ion-input>
+        <ion-item>
+          <ion-input label="Text input" placeholder="Digite seu nome completo"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Number input" type="int" maxlength="2" placeholder="Digite sua idade"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Password input" type="password" placeholder="Digite sua senha"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Email input" type="email" placeholder="Digite seu email"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-input label="Telephone input" type="tel" placeholder="Digite seu telefone com ddd"></ion-input>
+        </ion-item>
+
+        <ion-button class="botao" shape="round" color="dark violet">Cadastre-se</ion-button>
       </ion-list>
   </div>
 
-  <div></div>
+  <div>
+    <ion-card>
+      <img alt="Foto do meu perfil" src="https://img.freepik.com/vetores-premium/homem-perfil-caricatura_18591-58482.jpg?w=2000" />
+      <ion-card-header>
+        <ion-card-title>Meu Perfil</ion-card-title>
+        <ion-card-subtitle>Nome Sobrenome</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
 </ion-content>
