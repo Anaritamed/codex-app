@@ -3,6 +3,7 @@ import { IonButton, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCo
 import { Usuario } from '../util/Usuario';
 import '../style/Perfil.css';
 
+// Componente que representa a terceira página "Perfil"
 const Perfil: React.FC = () => {
   const [dadosUsuario, setDadosUsuario] = useState<Usuario>({ id: 1, nome: 'Marcos Antônio', genero: 'Masculino', idade: 19, email: 'marcosantonio@gmail.com', telefone: '(83) 99945-7890' });
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);

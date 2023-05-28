@@ -11,6 +11,7 @@ type Props = {
   onCancel: () => void
 }
 
+// Componente do Modal de Edição das Tarefas
 const EditaTarefaModal = ({ isModalOpen, tarefa, onChangeTitulo, onChangeData, onSave, onCancel }: Props) => {
   return (
     <IonModal isOpen={isModalOpen}>

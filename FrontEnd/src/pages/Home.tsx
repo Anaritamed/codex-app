@@ -1,6 +1,7 @@
 import React from 'react';
 import { IonCard, IonCardContent, IonCardHeader, IonCardTitle, IonContent, IonHeader, IonItem, IonLabel, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 
+// Componente que representa a página incial "Home"
 const Home: React.FC = () => {
   return (
     <IonPage>

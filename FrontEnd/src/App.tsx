@@ -37,6 +37,7 @@ import './theme/variables.css';
 
 setupIonicReact();
 
+// Componente de rotas do app
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>

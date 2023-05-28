@@ -6,6 +6,7 @@ import NovaTarefaModal from '../components/NovaTarefaModal';
 import { Tarefa } from '../util/Tarefa';
 import '../style/Tarefas.css';
 
+// Componente que representa a segunda página "Tarefas"
 const Tarefas: React.FC = () => {  
   const [tarefas, setTarefas] = useState<Record<number, Tarefa>>({ 1: { id: 1, titulo: 'Trabalho Codex', data: '28/05/2023', concluida: false}});
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);

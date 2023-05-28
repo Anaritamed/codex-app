@@ -7,6 +7,7 @@ type Props = {
   onCancel: () => void
 }
 
+// Componente do Modal de Criação de uma nova Tarefa
 const NovaTarefaModal = ({ isModalOpen, onSave, onCancel }: Props) => {
   const [titulo, setTitulo] = useState('');
   const [data, setData] = useState('');
