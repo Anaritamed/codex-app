@@ -12,32 +12,33 @@ const Tarefas: React.FC = () => {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
 
+  // Marca ou desmarca a tarefa como concluída
   const handleTarefaStatus = (id: number, concluida: boolean) => {
     tarefas[id].concluida = concluida;
     setTarefas({ ...tarefas });
   }
-
+  // Altera o título da tarefa
   const handleTarefaTitulo = (id: number, titulo: string | undefined) => {
     tarefas[id].titulo = titulo;
   }
-
+  // Altera a data da tarefa
   const handleTarefaData = (id: number, data: string | undefined) => {
     tarefas[id].data = data;
   }
-
+  // Adiciona uma nova tarefa
   const adicionaTarefa = (titulo: string, data: string) => {
     const tarefa = new Tarefa(2, titulo, data);
     tarefas[tarefa.id] = tarefa;
     setTarefas({ ...tarefas });
     setIsAddModalOpen(false);
   }
-
+  // Edita uma tarefa
   const editaTarefa = (tarefa: Tarefa) => {
     tarefas[tarefa.id] = tarefa;
     setTarefas({ ...tarefas });
     setIsEditModalOpen(false);
   }
-
+  // Deleta uma tarefa
   const deletaTarefa = (id: number) => {
     delete tarefas[id];
     setTarefas({ ...tarefas });
