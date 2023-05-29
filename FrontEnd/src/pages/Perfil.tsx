@@ -7,24 +7,24 @@ import '../style/Perfil.css';
 const Perfil: React.FC = () => {
   const [dadosUsuario, setDadosUsuario] = useState<Usuario>({ id: 1, nome: 'Marcos Antônio', genero: 'Masculino', idade: 19, email: 'marcosantonio@gmail.com', telefone: '(83) 99945-7890' });
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
-
+  // Altera nome do usuário
   const handleUsuarioNome = (nome: string | undefined) => {
     dadosUsuario.nome = nome;
   }
-
+  // Altera email do usuário
   const handleUsuarioEmail = (email: string | undefined) => {
     dadosUsuario.email = email;
   }
-
+  // Altera telefone do usuário
   const handleUsuarioTelefone = (telefone: string | undefined) => {
     dadosUsuario.telefone = telefone;
   }
-
+  // Edita perfil do usuário
   const editaPerfil = (dadosUsuario: Usuario) => {
     setDadosUsuario(dadosUsuario);
     setIsEditModalOpen(false);
   }
-
+  // Modal de edição do perfil
   const editaPerfilModal = () => {
     return (
       <IonModal isOpen={isEditModalOpen}>
