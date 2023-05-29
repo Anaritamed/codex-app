@@ -1,3 +1,4 @@
+// Classe que representa um Usuário
 export class Usuario {
   public id: number;
   public nome: string | undefined;

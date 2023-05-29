@@ -1,3 +1,4 @@
+// Classe que representa uma Tarefa
 export class Tarefa {
   public id: number;
   public titulo: string | undefined;
