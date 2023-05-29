@@ -8,9 +8,12 @@ export default class User extends BaseModel {
 
   @column()
   public image: string
-  
+
   @column()
   public nome: string
+
+  @column()
+  public sobrenome: string
 
   @column()
   public genero: string

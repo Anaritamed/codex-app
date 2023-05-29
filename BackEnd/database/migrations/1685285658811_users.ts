@@ -8,6 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.string('image')
       table.string('nome')
+      table.string('sobrenome')
       table.string('genero')
       table.integer('idade')
       table.string('email')

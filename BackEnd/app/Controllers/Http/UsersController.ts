@@ -29,11 +29,11 @@ export default class UsersController {
   /**
    * Armazena os dados do usuário no banco de dados
    * 
-   * @param param0 image, nome, genero, idade, email, password
+   * @param param0 image, nome, sobrenome, genero, idade, email, password
    * @returns o usuário salvo
    */
   public async store({ request }: HttpContextContract) {
-    const body = request.only(['image', 'nome', 'genero', 'idade', 'email', 'password'])
+    const body = request.only(['image', 'nome', 'sobrenome', 'genero', 'idade', 'email', 'password'])
     const image = request.file('image', this.validationOptions)
 
     if (image) {
@@ -49,6 +49,7 @@ export default class UsersController {
     const user = await User.create({
       image: body.image,
       nome: body.nome,
+      sobrenome: body.sobrenome,
       genero: body.genero,
       idade: body.idade,
       email: body.email,
@@ -77,7 +78,7 @@ export default class UsersController {
    */
   public async update({ request }: HttpContextContract) {
     const userId = request.param('id')
-    const body = request.only(['image', 'nome', 'genero', 'idade', 'email', 'password'])
+    const body = request.only(['image', 'nome', 'sobrenome', 'genero', 'idade', 'email', 'password'])
     const user = await User.findOrFail(userId)
 
     //Verifica se a imagem já está armazenada ou se não existe no banco de dados
