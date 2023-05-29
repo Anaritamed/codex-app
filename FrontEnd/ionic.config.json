@@ -1,0 +1,8 @@
+{
+  "name": "diario",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "8681a76a"
+}
